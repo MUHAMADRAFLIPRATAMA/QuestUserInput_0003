@@ -20,4 +20,13 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContent {
-            
+            Act5Theme() {
+                Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
+                    FormDataDiri(
+                        modifier = Modifier.padding(innerPadding)
+                    )
+                }
+            }
+        }
+    }
+}
