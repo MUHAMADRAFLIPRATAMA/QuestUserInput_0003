@@ -26,6 +26,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.dimensionResource
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.res.stringResource
 
 @Composable
 fun FormDataDiri(modifier: Modifier = Modifier) {
@@ -45,4 +46,15 @@ fun FormDataDiri(modifier: Modifier = Modifier) {
         verticalArrangement = Arrangement.Top,
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
+        OutlinedTextField(
+            value = textNama,
+            singleLine = true,
+            shape = MaterialTheme.shapes.large,
+            modifier = Modifier.width(250.dp),
+            label = { Text(text = "Nama Lengkap") },
+            onValueChange = {
+                textNama = it
+            }
+        )
+
         
