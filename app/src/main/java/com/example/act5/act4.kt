@@ -57,4 +57,13 @@ fun FormDataDiri(modifier: Modifier = Modifier) {
             }
         )
 
-        
+        Row {
+            gender.forEach { item ->
+                Row(
+                    modifier = Modifier.selectable(
+                        selected = testJK == item,
+                        onClick = { testJK = item }
+                    ),
+                    verticalAlignment = Alignment.CenterVertically
+                ) {
+                    
