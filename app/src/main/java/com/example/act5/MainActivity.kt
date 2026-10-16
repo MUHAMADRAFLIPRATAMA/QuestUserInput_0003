@@ -15,3 +15,9 @@ import com.example.act5.FormDataDiri
 import com.example.act5.ui.theme.Act5Theme
 import com.example.act5.ui.theme.Act5Theme
 
+class MainActivity : ComponentActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        enableEdgeToEdge()
+        setContent {
+            
